@@ -1,4 +1,4 @@
-// This must be imported for first
+// This must be imported first
 import "reflect-metadata";
 import "./index.css";
 // enables i18n
