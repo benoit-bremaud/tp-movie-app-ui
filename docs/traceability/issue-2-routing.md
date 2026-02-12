@@ -10,10 +10,12 @@ Already implemented on branch `tp` before this issue execution window.
 ## Evidence
 
 - Router configuration exists in `src/Router/index.tsx`
-  - `/` → `Home`
-  - `/movies` → `Movies`
-  - `/movies/:movieId` → `Movie`
-  - `*` → `NotFound`
+  - `/` (parent route)
+    - index / `path: ""` → `Home`
+    - `path: "movies"` (`/movies`) → `Movies`
+    - `path: "movies/:movieId"` (`/movies/:movieId`) → `Movie`
+    - `path: "*"` → `NotFound`
+- Router is mounted in `src/App.tsx` via `<Router />`
 - Required pages exist and are wired:
   - `src/pages/Home/index.tsx`
   - `src/pages/Movies/index.tsx`
